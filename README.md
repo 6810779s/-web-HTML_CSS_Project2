@@ -1,7 +1,7 @@
 # HTML_CSS_Second_Project
 This is my second project, it's a profile 
 
-### Reson for Project planning
+## Reson for Project planning
 
 >This project for practicing CSS and Html.
 >It's made by basic HTML and CSS,
