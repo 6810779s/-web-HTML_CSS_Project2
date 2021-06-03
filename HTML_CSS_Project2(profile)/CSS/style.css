@@ -8,15 +8,64 @@
 }
 
 body{
-  padding-top: 200px;
   background: rgb(227, 252, 250);
-  overflow: hidden;
-  position: relative;
 }
 
 #container{
   width: 100%;
+  height: 1000px;
+  margin: auto;
+}
+
+#wrap{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
   
+}
+
+
+img[alt = "share_box"]{
+  position: absolute;
+  display: none;
+  top:50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: 75px;
+  z-index: 101;
+}
+img[alt = "facebook"]{
+  position:absolute;
+  display: none;
+  cursor: pointer;
+  top:50%;
+  left: 50%;
+  margin-top: -17px;
+  margin-left: 90px;
+  z-index: 101;
+}
+
+img[alt = "twitch"]{
+  position:absolute;
+  display: none;
+  cursor: pointer;
+  top:50%;
+  left: 50%;
+  margin-top: -17px;
+  margin-left: 140px;
+  z-index: 101;
+}
+
+img[alt = "gmail"]{
+  position:absolute;
+  display: none;
+  cursor: pointer;
+  top:50%;
+  left: 50%;
+  margin-top: -17px;
+  margin-left: 190px;
+  z-index: 101;
 }
 
 li{
@@ -28,12 +77,14 @@ img[alt = "top_pattern"]{
   position: absolute;
   left: -600px;
   top: -800px;
+  z-index: 99;
 }
 
 img[alt = "bottom_pattern"]{
   position: absolute;
   right: -400px;
   bottom: -1200px;
+  z-index: 99;
 }
 
 /* #container{
@@ -45,20 +96,29 @@ img[alt = "bottom_pattern"]{
 } */
 
 #profile{
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 350px;
   height: 400px;
   margin: auto;
   border-radius: 10px;
-  position: relative;
   overflow: hidden;
-  z-index: 100;
-  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -200px;
   
 }
 
+#wrap_profile{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  z-index: 100;
+}
+
 #top{
-  
   background: white;
   width: 100%;
   height: 300px;
@@ -66,7 +126,6 @@ img[alt = "bottom_pattern"]{
 }
 
 .top-disign{
-  
   width: 100%;
   height: 138px;
 }
@@ -78,6 +137,30 @@ img[alt = "bottom_pattern"]{
   top: 78px;
   left: 125px
 }
+img[alt = "heart_empty"]{
+  position:absolute;
+  display: block;
+  cursor: pointer;
+  right: 50px;
+}
+img[alt = "heart_full"]{
+  position:absolute;
+  display: none;
+  cursor: pointer;
+  right: 50px;
+}
+img[alt = "share_icon"]{
+  position:absolute;
+  cursor: pointer;
+  right: 13px;
+}
+
+
+/* img[alt = "heart_full"]:hover{
+  cursor: pointer;
+} */
+
+
 
 .mid-info{
   padding-top: 60px;
@@ -138,16 +221,78 @@ img[alt = "bottom_pattern"]{
 }
 
 @media (max-width: 767px){
+  #container{
+    width: 100%;
+    margin: auto;
+  }
+  
+  #wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  img[alt = "share_box"]{
+    position: absolute;
+    display: none;
+    top:50%;
+    left: 50%;
+    margin-top: -85px;
+    margin-left: 25px;
+    z-index: 101;
+  }
+  img[alt = "facebook"]{
+    position:absolute;
+    display: none;
+    top:50%;
+    left: 50%;
+    margin-top: -67px;
+    margin-left: 40px;
+    z-index: 101;
+  }
+  
+  img[alt = "twitch"]{
+    position:absolute;
+    display: none;
+    top:50%;
+    left: 50%;
+    margin-top: -67px;
+    margin-left: 90px;
+    z-index: 101;
+  }
+  
+  img[alt = "gmail"]{
+    position:absolute;
+    display: none;
+    top:50%;
+    left: 50%;
+    margin-top: -67px;
+    margin-left: 140px;
+    z-index: 101;
+  }
   #profile{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 300px;
     height: 350px;
     margin: auto;
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
-    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -200px;
+    
+  }
+
+  #wrap_profile{
+    width: 100%;
+    height: 100%;
+    position: relative;
     font-family: 'Pacifico', cursive;
+    z-index: 100;
   }
   #top{
     background: white;
@@ -168,6 +313,24 @@ img[alt = "bottom_pattern"]{
     position: absolute;
     top: 48px;
     left: 100px
+  }
+
+  img[alt = "heart_empty"]{
+    position:absolute;
+    display: block;
+    right: 50px;
+    bottom: 10px;
+  }
+  img[alt = "heart_full"]{
+    position:absolute;
+    display: none;
+    right: 50px;
+    bottom: 10px;
+  }
+  img[alt = "share_icon"]{
+    position:absolute;
+    right: 13px;
+    bottom: 10px;
   }
 
   #bottom .num{
@@ -199,6 +362,8 @@ img[alt = "bottom_pattern"]{
     right: -800px;
     bottom: -1200px;
   }
+
+  
 
 }
 
