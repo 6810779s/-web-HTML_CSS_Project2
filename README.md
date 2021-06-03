@@ -1,18 +1,13 @@
-# HTML_CSS_Second_Project
-This is my second project, it's a profile 
+# Profile Card
+> This is my second project, it just a simple profile card
+> It's created by Html and CSS. 
 
-## Reson for Project planning
+## Reason for Project planning
+> To be an good front end developer,I must have to  be proficient in HTML and CSS
+> This project is really good to learn layout.
+> So I chose this project to learn them.
 
->This project for practicing CSS and Html.
->It's made by basic HTML and CSS,
->and plan this project via "https://www.frontendmentor.io/challenges" site's challenging program.
-
-
-## Using CSS
->position
->position:absolute position
-
-## Responsive Web
->스마트폰이 보편화된 시대이므로, 스마트폰을 이용하는 사용자들을 위해 웹 이용시
->해당 디바이스 크기에 알맞은 모양으로 변형되며, 데스크탑 사용자와 스마트폰
->사용자 모두 편리하게 볼 수 있는 반응형 웹으로 디자인 하였습니다.
+## How to use
+> It just simple screen design.But it's a responsive web design.
+> On smaller devices (window width smaller than 767px), for users convinience,
+> the layout would be changed in accordance with device's size.
